@@ -9,9 +9,13 @@ export class TodoListComponent implements OnInit {
 
   constructor() { }
 
-  items=['やること1', 'やること2', 'やること3']
+  items = ['やること1', 'やること2', 'やること3']
 
   ngOnInit(): void {
   }
 
+  addTodo(todo: string): void {
+    this.items.push(todo);
+  }
+  
 }
